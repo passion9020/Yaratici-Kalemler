@@ -1,11 +1,3 @@
 import React from 'react'; import { Card, CardContent } from '@/components/ui/card'; import { Button } from '@/components/ui/button';
 
-export default function YaratıcıKalemlerAd() { return ( 
-
-Yaratıcı Kalemler 
-
-8-11 yaş arası çocuklar için yaratıcı yazarlık atölyesi
-
-✅ Birebir yazarlık koçluğu ✅ Eğlenceli yazma oyunları ✅ Kahraman yaratma ve hikaye inşası ✅ Online topluluk üyeliği Şimdi Kayıt Ol! 
-
-); } 
+export default function YaratıcıKalemlerAd() { return ( <div className="flex items-center justify-center h-screen bg-gradient-to-r from-pink-200 to-yellow-200"> <Card className="w-[350px] p-6 rounded-2xl shadow-lg bg-white"> <CardContent> <h1 className="text-3xl font-bold text-center text-pink-700 mb-4">Yaratıcı Kalemler</h1> <p className="text-lg text-gray-700 text-center mb-4">8-11 yaş arası çocuklar için yaratıcı yazarlık atölyesi</p> <ul className="text-gray-600 text-sm mb-6"> <li>✅ Birebir yazarlık koçluğu</li> <li>✅ Eğlenceli yazma oyunları</li> <li>✅ Kahraman yaratma ve hikaye inşası</li> <li>✅ Online topluluk üyeliği</li> </ul> <Button className="w-full bg-pink-700 text-white py-2 rounded-xl">Şimdi Kayıt Ol!</Button> </CardContent> </Card> </div> ); }
